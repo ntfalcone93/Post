@@ -67,7 +67,7 @@ It is good practice to write reusable code. Even when you do not plan to reuse t
 
 This method will make the network call and call the completion closer with the `NSData?` result. If successful, `NSData?` will contain the response, if unsuccessful, `NSData?` will be nil. The class or function that calls this function will need to handle nil data.
 
-5. Use a Playground to test your network controller method with a sample endpoint from the [Post API](http://devmtn-post.firebaseio.com/posts.json) to see if you are getting data returned.
+5. Use a Playground to test your network controller method with a sample endpoint from the [Post API](https://devmtn-post.firebaseio.com/posts.json) to see if you are getting data returned.
 
 As of iOS 9, Apple is boosting security and requiring developers to use the secure HTTPS protocol and requires the server to use the proper TLS Certificate version. The Post API does support HTTPS but does not use the correct TLS Certificate version. So for this app, you will need to turn off the App Transport Security feature.
 
@@ -81,7 +81,7 @@ Create a `Post` model type that will hold the information of a post to display t
 Create a model object that will represent the `Post` objects that are listed in the feed. This model object will be generated locally, but also must be generated from JSON dictionaries. 
 
 1. Create a `Post.swift` file and define a new `Post` struct.
-2. Go to a sample endpoint of the [Post API](http://devmtn-post.firebaseio.com/posts.json) API and see what JSON (information) you will get back for each post.
+2. Go to a sample endpoint of the [Post API](https://devmtn-post.firebaseio.com/posts.json) API and see what JSON (information) you will get back for each post.
 3. Using this information, add properties on `Post`.
     * `let username: String`
     * `let text: String`
